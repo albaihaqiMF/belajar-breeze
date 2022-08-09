@@ -14,27 +14,4 @@
             </div>
         </div>
     </div>
-    <div class="grid grid-cols-4 gap-4 p-12">
-        <x-card title="Asha" class="bg-red-500"
-            src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-        <x-card title="Marsel" class="bg-indigo-500" />
-        <x-card title="Aldi" />
-        <x-card title="Khalfan" />
-        <x-card title="Muhammad Fahmi Albaihaqi" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFmvASAHQ8CVmBfLL7QEGefPp2P8W_-ffsHG7MUOlnGw&s"/>
-    </div>
-
-    {{-- <div class="shadow rounded-md p-4">
-        <h1 class="text-lg">title 1</h1>
-    </div>
-    <div class="shadow rounded-md p-4">
-        <h1 class="text-lg">title 2</h1>
-    </div>
-    <div class="shadow rounded-md p-4">
-        <h1 class="text-lg">title 3</h1>
-    </div>
-    <div class="shadow rounded-md p-4">
-        <h1 class="text-lg">title 4</h1> --}}
-        {{--
-    </div> --}}
-
 </x-app-layout>
