@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Department;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,10 +19,24 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('profile', 'profile');
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+Route::get('user/{id}', function ($id) {
+    $user = User::find($id);
+
+    $user->department;
+
+    return $user;
+});
+
+Route::get('fakultas/{id}', function ($id) {
+    $fakultas = Department::find($id);
+
+    $fakultas->students;
+
+    return $fakultas;
+});
+
+require __DIR__ . '/auth.php';
